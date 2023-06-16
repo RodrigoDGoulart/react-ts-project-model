@@ -1,6 +1,12 @@
+import { Provider, TemaProvider } from "./contexts";
+import AppRouter from "./routes";
+
 export default function App() {
   return (
-    <div>
-    </div>
+    <TemaProvider>
+      <Provider>
+        <AppRouter />
+      </Provider>
+    </TemaProvider>
   );
 }
